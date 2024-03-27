@@ -8,18 +8,18 @@ import MainLayout from './layouts/MainLayout';
 import "./global.css"
 
 function App() {
-
+const [mobileMenu, setMobileMenu] = useState(null)
   return (
     <>
 <Header pageTitle={"Home page"}/>
     
       <Routes>
+        
         <Route element={<MainLayout />}>
           <Route path='/' element={<p>Home</p>} />
           <Route path='mammals' element={<p>mammals</p>} />
           <Route path='birds' element={<p>birds</p>} />
           <Route path='reptiles' element={<p>reptiles</p>} />
-
 
         </Route>
         
