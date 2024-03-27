@@ -4,18 +4,20 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import MainLayout from './layouts/MainLayout';
+import {getImageURL} from "./utils/functions"
 
 import "./global.css"
 
 function App() {
-const [mobileMenu, setMobileMenu] = useState(null)
+  const [mobileMenu, setMobileMenu] = useState("false")
   return (
     <>
 <Header pageTitle={"Home page"}/>
     
       <Routes>
         
-        <Route element={<MainLayout />}>
+        <Route element={<MainLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
+        
           <Route path='/' element={<p>Home</p>} />
           <Route path='mammals' element={<p>mammals</p>} />
           <Route path='birds' element={<p>birds</p>} />
