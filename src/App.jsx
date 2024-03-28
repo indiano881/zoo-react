@@ -20,7 +20,7 @@ function App() {
         <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
         
           <Route path='/' element={<MainContent />} />
-          <Route path='mammals' element={<p>mammals</p>} />
+          <Route path='mammals' element={<MainContent />} />
           <Route path='birds' element={<p>birds</p>} />
           <Route path='reptiles' element={<p>reptiles</p>} />
 

@@ -1,0 +1,7 @@
+.animalName {
+    color: #eaeaea;
+    cursor: pointer;
+}
+.animalName:hover {
+    text-decoration: underline;
+}
