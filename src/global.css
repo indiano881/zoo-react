@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --color-primary: #2c2c34;
+    --color-primary-alternative: #362c28;
+    --color-secondary: #549f93;
+    --color-terziary: #eaeaea;
+}
 
 * {
     box-sizing: border-box;
