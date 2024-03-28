@@ -12,7 +12,7 @@ function Animal (name, lifespan, group, food, description, length, weight, found
 }
 
 const echidna = new Animal (
-    "echidna",
+    "Echidna",
     "50 years",
     "mammals",
     "insects such as ants and termites, beetle larvae and worms",
@@ -24,7 +24,7 @@ const echidna = new Animal (
 )
 
 const frillNeckedLizard = new Animal (
-    "frill-necked lizard",
+    "Frill-necked lizard",
     "20 years",
     "reptile",
     "Small insects and spiders",
@@ -35,7 +35,7 @@ const frillNeckedLizard = new Animal (
 
 )
 const cassowary = new Animal (
-    "cassowary",
+    "Cassowary",
     "20 years",
     "bird",
     "Plants matter like fruit, insects and small animals like mice amd lizards",
@@ -46,7 +46,7 @@ const cassowary = new Animal (
 )
 
 const tasmanianDevil = new Animal (
-    "tasmanian devil",
+    "Tasmanian devil",
     "5 years", 
     "mammals",
     "A predator, then eat meat from other animals such as wallabies and wombats",
@@ -68,7 +68,7 @@ const hawksbillTurtle = new Animal (
 )
 
 const kookaburra = new Animal (
-    "kookaburra",
+    "Kookaburra",
     "20 years",
     "bird",
     "Insects and smalll animals including snakes, frogs and lizards",
@@ -79,7 +79,7 @@ const kookaburra = new Animal (
 )
 
 const quokka = new Animal (
-    "quokka",
+    "Quokka",
     "10 years",
     "mammals",
     "Plant eaters, they munch on shrubs and grasses",
@@ -101,7 +101,7 @@ const perentie = new Animal (
 )
 
 const ytbCockatoo= new Animal (
-    "yellow tailed black cockatoo",
+    "Yellow tailed black cockatoo",
     "41 years",
     "bird",
     "Fruit, seeds and other plant material",

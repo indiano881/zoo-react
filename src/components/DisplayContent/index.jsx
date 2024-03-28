@@ -6,6 +6,8 @@ const DisplayContent = () => {
         <div className={styles.displayContent}>
             <p>DISPLAY CONTENT</p>
 
+            <p>WELCOME TO SIDNEY S ZOO</p>
+
         </div>
           
         </>

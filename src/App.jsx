@@ -11,6 +11,7 @@ import "./global.css"
 
 function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
+  const [showAnimal, setShowAnimal] = useState(null);
   return (
     <>
 <Header pageTitle={"Home page"}/>
@@ -19,7 +20,7 @@ function App() {
       <Route element={<DesktopLayout/>}>
         <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
         
-          <Route path='/' element={<MainContent />} />
+          <Route path='/' element={<MainContent setShowAnimal={setShowAnimal}/>} />
           <Route path='mammals' element={<MainContent />} />
           <Route path='birds' element={<p>birds</p>} />
           <Route path='reptiles' element={<p>reptiles</p>} />

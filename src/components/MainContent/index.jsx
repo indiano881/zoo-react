@@ -1,12 +1,12 @@
 import styles from './MainContent.module.css'
 import Sidebar from '../Sidebar';
 import DisplayContent from '../DisplayContent';
-const MainContent = () => {
+const MainContent = ({setShowAnimal}) => {
     return (
         <>
           <section className={styles.mainContent}>
             
-            <Sidebar />
+            <Sidebar setShowAnimal={setShowAnimal}/>
             <DisplayContent />
           </section>
         </>
