@@ -11,7 +11,7 @@ function Animal (name, lifespan, group, food, description, length, weight, found
     this.largeImg=largeImg;
 }
 
-const echidna = new Animal (
+export const echidna = new Animal ( //rimuovere xport
     "Echidna",
     "50 years",
     "mammals",

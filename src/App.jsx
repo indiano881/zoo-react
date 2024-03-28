@@ -20,7 +20,7 @@ function App() {
       <Route element={<DesktopLayout/>}>
         <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
         
-          <Route path='/' element={<MainContent setShowAnimal={setShowAnimal}/>} />
+          <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal}/>} />
           <Route path='mammals' element={<MainContent />} />
           <Route path='birds' element={<p>birds</p>} />
           <Route path='reptiles' element={<p>reptiles</p>} />
