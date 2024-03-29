@@ -5,7 +5,7 @@ const ShortAnimal = ({name, group, food, description, found, smallImg }) => { {/
     return (
         <>
         <div className={styles.shortAnimalContainer}>
-            <img src={getImageURL(smallImg)} alt={name} />
+            <img src={getImageURL(smallImg)} alt={name} height="350px" width="auto"/>
             <h2>{name}</h2>
             <h4>{group}</h4>
             <h4>{food}</h4>
