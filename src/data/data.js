@@ -115,3 +115,5 @@ const ytbCockatoo= new Animal (
 export const birdsArray = [cassowary, kookaburra, ytbCockatoo];
 export const mammalsArray = [echidna, tasmanianDevil, quokka];
 export const reptileArray = [frillNeckedLizard, hawksbillTurtle,perentie];
+
+export const allAnimalArray = [...birdsArray, ...mammalsArray, ...reptileArray]

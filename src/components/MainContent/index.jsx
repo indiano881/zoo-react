@@ -2,7 +2,7 @@ import styles from './MainContent.module.css'
 import Sidebar from '../Sidebar';
 import DisplayContent from '../DisplayContent';
 import ShortAnimal from "../Animals/ShortAnimal"
-import { echidna } from '../../data/data'; {/***rimuovere */}
+import { allAnimalArray } from '../../data/data'; {/***rimuovere */}
 
 const MainContent = ({showAnimal,setShowAnimal}) => {
     return (
@@ -11,7 +11,7 @@ const MainContent = ({showAnimal,setShowAnimal}) => {
             
             <Sidebar setShowAnimal={setShowAnimal}/>
             {!showAnimal && <DisplayContent />}
-            {showAnimal && <ShortAnimal {...echidna}/>}
+            {showAnimal &&   allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <ShortAnimal {...item}/>)}
             
           </section>
         </>

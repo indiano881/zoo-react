@@ -3,7 +3,7 @@ import styles from './SidebarButton.module.css'
 const SidebarButton = ({name, setShowAnimal}) => {
     const handleClick = () => {
       
-        setShowAnimal( name ? null : name)
+        setShowAnimal( name)
         console.log(name)
       
 
