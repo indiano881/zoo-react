@@ -1,4 +1,5 @@
 .shortAnimalContainer {
     background-color: aliceblue;
+    color: black;
     flex-grow: 1;
 }
