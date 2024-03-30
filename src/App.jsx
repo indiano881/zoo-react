@@ -13,12 +13,14 @@ function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
   const [showAnimal, setShowAnimal] = useState(null);
   const [category, setCategory] =useState("home")
+  
   return (
     <>
+    
 <Header pageTitle={"Home page"}/>
     
       <Routes>
-      <Route element={<DesktopLayout/>}>
+      <Route element={<DesktopLayout category={category} setCategory={setCategory}/>}>
         <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
         
           <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="home" setCategory={setCategory}/>} />

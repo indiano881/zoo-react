@@ -4,7 +4,7 @@ import DisplayContent from '../DisplayContent';
 import ShortAnimal from "../Animals/ShortAnimal"
 import { allAnimalArray } from '../../data/data'; 
 
-const MainContent = ({showAnimal,setShowAnimal, category, setCategory}) => {
+const MainContent = ({showAnimal, setShowAnimal, category, setCategory}) => {
     return (
         <>
           <section className={styles.mainContent}>

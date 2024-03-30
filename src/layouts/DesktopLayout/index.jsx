@@ -2,6 +2,7 @@ import styles from './DesktopLayout.module.css'
 import { NavLink, Outlet } from "react-router-dom"
 
 const DesktopLayout = () => {
+    
     return (
         <>
         <nav className={styles.desktopNav}>
