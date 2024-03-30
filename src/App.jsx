@@ -12,7 +12,7 @@ import "./global.css"
 function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
   const [showAnimal, setShowAnimal] = useState(null);
-  {/***AGGIUNGERE A USE STATE PER LE CATEGORIE- const [category, setCategory] =useState("allAnimalArray") */}
+  const [category, setCategory] =useState("allAnimalArray")
   return (
     <>
 <Header pageTitle={"Home page"}/>
