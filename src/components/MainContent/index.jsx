@@ -4,12 +4,12 @@ import DisplayContent from '../DisplayContent';
 import ShortAnimal from "../Animals/ShortAnimal"
 import { allAnimalArray } from '../../data/data'; 
 
-const MainContent = ({showAnimal,setShowAnimal}) => {
+const MainContent = ({showAnimal,setShowAnimal, category, setCategory}) => {
     return (
         <>
           <section className={styles.mainContent}>
             
-            <Sidebar setShowAnimal={setShowAnimal}/>
+            <Sidebar setShowAnimal={setShowAnimal} category={category} setCategory={setCategory}/>
             {!showAnimal && <DisplayContent />}
             {showAnimal &&   allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <ShortAnimal key={index} {...item} />)}
             

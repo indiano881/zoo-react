@@ -12,7 +12,7 @@ import "./global.css"
 function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
   const [showAnimal, setShowAnimal] = useState(null);
-  const [category, setCategory] =useState("allAnimalArray")
+  const [category, setCategory] =useState("home")
   return (
     <>
 <Header pageTitle={"Home page"}/>
@@ -21,10 +21,10 @@ function App() {
       <Route element={<DesktopLayout/>}>
         <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
         
-          <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal}/>} />
-          <Route path='mammals' element={<MainContent />} />
-          <Route path='birds' element={<p>birds</p>} />
-          <Route path='reptiles' element={<p>reptiles</p>} />
+          <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="home" setCategory={setCategory}/>} />
+          <Route path='mammals' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="mammals" setCategory={setCategory}/>} />
+          <Route path='birds' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="birds" setCategory={setCategory}/>} />
+          <Route path='reptiles' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="reptiles" setCategory={setCategory}/>} />
 
         </Route>
         
