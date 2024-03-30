@@ -5,7 +5,7 @@ import SidebarButton from "../SidebarButton"
 import { allAnimalArray, mammalsArray, reptileArray, birdsArray } from '../../data/data';
 
 const Sidebar = ({showAnimal,setShowAnimal, category, setCategory}) => {
-      showAnimal=null;
+      
     return (
         
           <div className={styles.sidebarContainer}> 
