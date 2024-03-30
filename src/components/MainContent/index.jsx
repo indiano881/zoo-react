@@ -10,7 +10,7 @@ const MainContent = ({showAnimal,setShowAnimal, category, setCategory}) => {
           <section className={styles.mainContent}>
             
             <Sidebar setShowAnimal={setShowAnimal} category={category} setCategory={setCategory}/>
-            {!showAnimal && <DisplayContent />}
+            {!showAnimal && <DisplayContent category={category} setCategory={setCategory}/>}
             {showAnimal &&   allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <ShortAnimal key={index} {...item} />)}
             
           </section>
