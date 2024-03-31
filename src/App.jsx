@@ -15,8 +15,8 @@ function App() {
   const [showAnimal, setShowAnimal] = useState(null);
   const [category, setCategory] =useState("home")
 
-  
   return (
+
     <>
     
       <Header pageTitle={"Home page"}/>
@@ -39,3 +39,17 @@ function App() {
 }
 
 export default App
+/* 
+LOGO
+GROUP WITH LINK
+double click anuimal disappear
+
+LIKE FUNCTION
+OPENING HOUR FUNCTION
+COOL ANIMATIONS
+use Effect?
+buy ticket page?
+
+
+
+*/
