@@ -1,15 +1,14 @@
 import styles from './MainContent.module.css'
+import { useState } from 'react';
 import Sidebar from '../Sidebar';
 import DisplayContent from '../DisplayContent';
 import ShortAnimal from "../Animals/ShortAnimal";
 import LongAnimal from "../Animals/LongAnimal"
 import { allAnimalArray } from '../../data/data'; 
-import { useState } from 'react';
+
 
 const MainContent = ({showAnimal, setShowAnimal, category, setCategory}) => {
-  
   const [isLongAnimalModalOpen, setLongAnimalModalOpen] = useState(false);
-  
   const handleClickCloseBtn = () => {
     setLongAnimalModalOpen(false)
   }

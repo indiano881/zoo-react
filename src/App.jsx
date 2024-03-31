@@ -16,7 +16,7 @@ function App() {
 
     <>
     
-      <Header pageTitle={"Home page"}/>
+      <Header pageTitle={"Sidney Zoo"}/>
     
       <Routes>
         <Route element={<DesktopLayout  setShowAnimal={setShowAnimal}/>}>

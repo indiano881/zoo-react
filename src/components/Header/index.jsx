@@ -4,7 +4,7 @@ const Header = ({pageTitle}) => {
     return (
         <>
           <header className={styles.header}>
-                <h1>{pageTitle}</h1>
+                <h1 className={styles.pageTitle}>{pageTitle}</h1>
 
           </header>
         </>
