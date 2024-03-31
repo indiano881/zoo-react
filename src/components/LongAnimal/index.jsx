@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Modal from '../Modal';
 
 
-const LongAnimal = ({name, lifespan, group, food, description, found, heigth, weight, largeImg, hasCloseBtn, isOpen, onClose }) => { 
+const LongAnimal = ({name, lifespan, group, food, description, found, length, weight, largeImg, hasCloseBtn, isOpen, onClose }) => { 
     return (
         <>
         <Modal hasCloseBtn={true} isOpen={isOpen} onClose={onClose}>
@@ -13,7 +13,7 @@ const LongAnimal = ({name, lifespan, group, food, description, found, heigth, we
             <h2>Name: {name}</h2>
             <h4>It belogs to {group} group and has a life expectancy of {lifespan}</h4>
             <h4>The {name} leaves in: {found} and likes to eat {food}</h4>
-            <p> Height: {heigth} Weight {weight}</p>
+            <p> Length: {length} Weight {weight}</p>
             <p>{description}</p>
 
         </div>
