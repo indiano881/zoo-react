@@ -21,7 +21,7 @@ const echidna = new Animal (
     "10kg",
     "Throughout Australia",
     "Echidna.png",
-    "Echidna.png"
+    "echidna-large.jpg"
 )
 
 const frillNeckedLizard = new Animal (
@@ -60,7 +60,7 @@ const tasmanianDevil = new Animal (
     "10kg",
     "Tasmania",
     "tasmanian-devil.png",
-    "tasmanian-devil.png"
+    "tasmanian-large.jpg"
 )
 
 const hawksbillTurtle = new Animal (
@@ -73,7 +73,7 @@ const hawksbillTurtle = new Animal (
     "50kg",
     "Tropical coasts of Queensland, Northern Territory and Western Australia.",
     "hawksbill-turtle.png",
-    "hawksbill-turtle.png",
+    "hawksbill-large.jpg",
 )
 
 const kookaburra = new Animal (
@@ -99,7 +99,7 @@ const quokka = new Animal (
     "3kg",
     "Only found on Rottnest Island and a few places on mainland Western Australia",
     "quokka.png",
-    "quokka.png"
+    "quokka-large.jpg"
 )
 
 const perentie = new Animal (
@@ -112,7 +112,7 @@ const perentie = new Animal (
     "20kg",
     "Deserts",
     "perentie.png",
-    "perentie.png"
+    "perentie-large.jpg"
 )
 
 const ytbCockatoo= new Animal (
@@ -125,7 +125,7 @@ const ytbCockatoo= new Animal (
     "900 grams",
     "SE Australia",
     "yellow-tailed-cockatoo.png",
-    "yellow-tailed-cockatoo.png"
+    "Cockatoo-large.jpg"
 )
 
 

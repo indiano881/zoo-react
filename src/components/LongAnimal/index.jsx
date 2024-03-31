@@ -11,12 +11,9 @@ const LongAnimal = ({name, lifespan, group, food, description, found, heigth, we
         <div className={styles.longAnimalContainer}>
         <img src={getImageURL(largeImg)} alt={name} height="450px" width="auto"/>
             <h2>Name: {name}</h2>
-            <h4>Belogs to {group} group</h4>
-            <h4>Life expectancy is : {lifespan}</h4>
-            <h4>The {name} likes to eat {food}</h4>
-            <h4>Leaves in : {found}</h4>
-            <p> Height: {heigth}</p>
-            <p> Weight {weight}</p>
+            <h4>It belogs to {group} group and has a life expectancy of {lifespan}</h4>
+            <h4>The {name} leaves in: {found} and likes to eat {food}</h4>
+            <p> Height: {heigth} Weight {weight}</p>
             <p>{description}</p>
 
         </div>
