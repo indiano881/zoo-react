@@ -15,21 +15,6 @@ function App() {
   const [showAnimal, setShowAnimal] = useState(null);
   const [category, setCategory] =useState("home")
 
-  const [isLongAnimalModalOpen, setLongAnimalModalOpen] = useState(false);
-  const [newsletterFormData, setNewsletterFormData] = useState(null);
-
-  const handleOpenNewsletterModal = () => {
-    setLongAnimalModalOpen(true);
-  };
-
-  const handleCloseNewsletterModal = () => {
-    setLongAnimalModalOpen(false);
-  };
-
-  const handleFormSubmit = (data) => {
-    setNewsletterFormData(data);
-    handleCloseNewsletterModal();
-  };
   
   return (
     <>
@@ -37,7 +22,7 @@ function App() {
       <Header pageTitle={"Home page"}/>
     
       <Routes>
-        <Route element={<DesktopLayout category={category} setCategory={setCategory}/>}>
+        <Route element={<DesktopLayout  setShowAnimal={setShowAnimal}/>}>
           <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
             <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="home" setCategory={setCategory}/>} />
             <Route path='mammals' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="mammals" setCategory={setCategory}/>} />
