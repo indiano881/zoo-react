@@ -10,17 +10,16 @@
     color: #eaeaea;
 }
 .pageTitle::before {
+    background-color: #eaeaea;
     background-image: url('../../assets/images/logo-green.png');
     background-size: cover;
     background-position: center;
-    content: "";
-    opacity: 1;
-    position: absolute;
-    background-color: #eaeaea;
     border-radius: 50px;
+    content: "";
+    left: 25px;
+    opacity: 1;
     padding: 8px;
-    left: 0;
-    top: 80;
+    position: absolute;
     
     height: 50px;
     width: 50px;

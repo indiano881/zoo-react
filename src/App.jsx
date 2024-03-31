@@ -37,12 +37,12 @@ function App() {
 
 export default App
 /* 
-LOGO
+LOGO DONE!!!
 GROUP WITH LINK
 double click anuimal disappear
 
 LIKE FUNCTION
-OPENING HOUR FUNCTION
+OPENING HOUR FUNCTION done!!!!
 COOL ANIMATIONS
 use Effect?
 buy ticket page?
