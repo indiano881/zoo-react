@@ -2,10 +2,9 @@ import styles from './SidebarButton.module.css'
 
 const SidebarButton = ({showAnimal, setShowAnimal}) => {
     const handleClick = () => {
-        setShowAnimal( showAnimal === null ? showAnimal : showAnimal)
+        setShowAnimal( null ? showAnimal : showAnimal)
         console.log(showAnimal)
         showAnimal=null
-        
     }
 
     return (
