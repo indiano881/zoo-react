@@ -5,9 +5,6 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import MobileLayout from './layouts/MobileLayout';
 import DesktopLayout from './layouts/DesktopLayout';
-import LongAnimal from "./components/LongAnimal"
-
-
 import "./global.css"
 
 function App() {
