@@ -34,7 +34,7 @@ const frillNeckedLizard = new Animal (
     "1 kg",
     "Northern Australia",
     "frilled-lizard-small.jpeg",
-    "frilled-lizard-big"
+    "frilled-lizard-big.jpeg"
 
 )
 const cassowary = new Animal (

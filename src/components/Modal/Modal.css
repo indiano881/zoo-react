@@ -1,0 +1,22 @@
+.modal::backdrop {
+    background: hsla(110, 95%, 14%, 0.5);
+  }
+  
+  .modal {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: relative;
+    
+    overflow: auto;
+  }
+  
+  .modal-close-btn {
+    font-size: 0.75em;
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+  }
+  
