@@ -18,7 +18,7 @@ const MainContent = ({showAnimal, setShowAnimal, category, setCategory}) => {
           <section className={styles.mainContent}>
             <Sidebar setShowAnimal={setShowAnimal} category={category} setCategory={setCategory}/>
             {!showAnimal && <DisplayContent category={category} setCategory={setCategory}/>}
-            {showAnimal &&   allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <ShortAnimal  key={index} {...item} isLongAnimalModalOpen={isLongAnimalModalOpen} setLongAnimalModalOpen={setLongAnimalModalOpen}/>)}
+            {showAnimal &&   allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <ShortAnimal  key={index} {...item} isLongAnimalModalOpen={isLongAnimalModalOpen} setLongAnimalModalOpen={setLongAnimalModalOpen} setCategory={setCategory}/>)}
             {isLongAnimalModalOpen===true && allAnimalArray.filter(item=> item.name=== showAnimal).map((item, index)=> <LongAnimal {...item} key={index} isOpen={isLongAnimalModalOpen} onClose={handleClickCloseBtn}/>)}
           </section>
         </>
