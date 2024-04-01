@@ -1,5 +1,7 @@
 .footer {
     background-color: #2c2c34;
     color: #eaeaea;
-    height: 100px;
+    height: 80px;
+    line-height: 8px;
+    text-align: center;
 }

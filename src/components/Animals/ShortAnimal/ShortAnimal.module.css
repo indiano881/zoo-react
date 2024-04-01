@@ -1,16 +1,41 @@
 .shortAnimalContainer {
-    background-color: aliceblue;
+    background-color: #549f93;
     color: black;
     flex-grow: 1;
+    text-align: center;
+}
+
+.animalImg {
+    margin-top: 12px;
 }
 
 .readMoreBtn {
-    background-color: aquamarine;
+    background-color: #eaeaea;
     border: 1px solid black;
     border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
     padding: 0 8px 0 8px;
 }
 
 .readMoreBtn:hover {
-    background-color: blueviolet;
+    background-color: #34343a;
+    color: #eaeaea;
+}
+
+.groupLink {
+    color: #eaeaea;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.groupLink:hover {
+    text-decoration: unset;
+}
+
+@media screen and (min-width: 768px) {
+    .animalImg {
+        margin-top: 24px;
+        width: 60%;
+    }
 }

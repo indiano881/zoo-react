@@ -9,11 +9,11 @@ const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAni
     return (
         <>
         <div className={styles.shortAnimalContainer}>
-            <img src={getImageURL(smallImg)} alt={name} height="350px" width="auto"/>
-            <h2>{name}</h2>
-            <h4>{group}</h4>
-            <h4>{food}</h4>
-            <h4>{found}</h4>
+            <img src={getImageURL(smallImg)} className={styles.animalImg} alt={name} height="auto" width="250px"/>
+            <h2>Name: {name}</h2>
+            <h4>Belongs to the <span className={styles.groupLink}>{group}</span> group</h4>
+            <h4>Food: {food}</h4>
+            <h4>Natural habitat: {found}</h4>
             <p>{description.slice(0,200)} <span className={styles.readMoreBtn} onClick={handleClick}>...Read more</span></p>
 
         </div>

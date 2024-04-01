@@ -1,4 +1,11 @@
 .sidebarContainer {
-    background-color: #549f93;
-    width: 35%;
+    background-color: #34343a;
+    width: 100px;
+}
+
+@media screen and (min-width:500px) {
+    .sidebarContainer {
+        background-color: #34343a;
+        width: 35%;
+    }
 }
