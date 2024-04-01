@@ -16,6 +16,7 @@
     cursor: pointer;
     font-weight: bold;
     padding: 0 8px 0 8px;
+    margin-bottom: 8px;
 }
 
 .readMoreBtn:hover {
@@ -31,6 +32,10 @@
 }
 .groupLink:hover {
     text-decoration: unset;
+}
+
+.description {
+    margin: 0 10% 0 10%;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,15 +1,16 @@
 .modal::backdrop {
-    background: hsla(110, 95%, 14%, 0.5);
+    background: #34343a;
+    opacity: 0.6;
   }
   
   .modal {
+    background: #549f93;
     width: 90%;
     height: auto;
     padding: 16px;
     border: 3px solid black;
     border-radius: 20px;
     position: relative;
-    
     overflow: auto;
   }
   

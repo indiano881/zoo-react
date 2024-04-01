@@ -14,7 +14,8 @@ const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAni
             <h4>Belongs to the <span className={styles.groupLink}>{group}</span> group</h4>
             <h4>Food: {food}</h4>
             <h4>Natural habitat: {found}</h4>
-            <p>{description.slice(0,200)} <span className={styles.readMoreBtn} onClick={handleClick}>...Read more</span></p>
+            <p className={styles.description}>Description: {description.slice(0,200)} <span>...</span></p>
+            <span className={styles.readMoreBtn} onClick={handleClick}>...Read more</span>
 
         </div>
           

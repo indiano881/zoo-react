@@ -9,7 +9,7 @@ const LongAnimal = ({name, lifespan, group, food, description, found, length, we
         <>
         <Modal hasCloseBtn={true} isOpen={isOpen} onClose={onClose}>
         <div className={styles.longAnimalContainer}>
-        <img src={getImageURL(largeImg)} alt={name} height="450px" width="auto"/>
+        <img src={getImageURL(largeImg)} className={styles.animalImg} alt={name} height="auto" width="280px"/>
             <h2>Name: {name}</h2>
             <h4>It belogs to {group} group and has a life expectancy of {lifespan}</h4>
             <h4>The {name} leaves in: {found} and likes to eat {food}</h4>

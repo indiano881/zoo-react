@@ -1,3 +1,21 @@
 .longAnimalContainer {
-    background-color: aqua;
+    background-color: #549f93;
+    text-align: center;
+}
+
+.animalImg {
+    margin: 16px;
+    
+}
+
+@media screen and (min-width: 500px) {
+    .animalImg {
+        width: 350px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .animalImg {
+        margin: 16px;
+        width: 70%;
+    }
 }
