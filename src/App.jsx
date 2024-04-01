@@ -11,7 +11,7 @@ function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
   const [showAnimal, setShowAnimal] = useState(null);
   const [category, setCategory] =useState("home")
-  const [alreadyClicked, setAlreadyClicked] = useState(false)
+  const [alreadyClicked, setAlreadyClicked] = useState(null)
 
   return (
 
