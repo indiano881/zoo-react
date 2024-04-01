@@ -1,13 +1,24 @@
 .desktopNav {
     display: none;
-
 }
-
 
 
 @media screen and (min-width:768px) {
     .desktopNav {
+        background-color: #2c2c34;
         display: flex;
+        justify-content: space-around;
+    }
+
+    .desktopMenu {
+        color: #eaeaea;
+        margin-bottom: 8px;
+        text-decoration: none;
+        transition: text-decoration 2s ease; /*CHECK THIS WHY IS NOT WORKING*/
+    }
+
+    .desktopMenu:hover {
+        text-decoration: underline;
     }
    
     
