@@ -6,12 +6,14 @@ const SidebarButton = ({ showAnimal, setShowAnimal, alreadyClicked, setAlreadyCl
             setShowAnimal(showAnimal);
             setAlreadyClicked(true);
         } else if (alreadyClicked === true && showAnimal === showAnimal) {
-            setShowAnimal(null);
-            setAlreadyClicked(false);
-        } else if (alreadyClicked === true) {
             setShowAnimal(showAnimal);
             setAlreadyClicked(false);
-        }
+        } else if (alreadyClicked === true && showAnimal !== showAnimal) {
+            setShowAnimal(showAnimal);
+            setAlreadyClicked(true);
+        } 
+        console.log(alreadyClicked)
+        console.log(showAnimal)
     }
 
     return (

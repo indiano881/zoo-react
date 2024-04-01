@@ -11,6 +11,7 @@ function App() {
   const [mobileMenu, setMobileMenu] = useState("false")
   const [showAnimal, setShowAnimal] = useState(null);
   const [category, setCategory] =useState("home")
+  const [alreadyClicked, setAlreadyClicked] = useState(false)
 
   return (
 
@@ -21,10 +22,10 @@ function App() {
       <Routes>
         <Route element={<DesktopLayout  setShowAnimal={setShowAnimal}/>}>
           <Route element={<MobileLayout mobileMenu={mobileMenu} setMobileMenu={setMobileMenu}/>}>
-            <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="home" setCategory={setCategory}/>} />
-            <Route path='mammals' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="mammals" setCategory={setCategory}/>} />
-            <Route path='birds' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="birds" setCategory={setCategory}/>} />
-            <Route path='reptiles' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="reptiles" setCategory={setCategory}/>} />
+            <Route path='/' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="home" setCategory={setCategory} alreadyClicked={alreadyClicked} setAlreadyClicked={setAlreadyClicked}/>} />
+            <Route path='mammals' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="mammals" setCategory={setCategory} alreadyClicked={alreadyClicked} setAlreadyClicked={setAlreadyClicked}/>} />
+            <Route path='birds' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="birds" setCategory={setCategory} alreadyClicked={alreadyClicked} setAlreadyClicked={setAlreadyClicked}/>} />
+            <Route path='reptiles' element={<MainContent showAnimal={showAnimal} setShowAnimal={setShowAnimal} category="reptiles" setCategory={setCategory} alreadyClicked={alreadyClicked} setAlreadyClicked={setAlreadyClicked}/>} />
           </Route>
         </Route>
       </Routes>
