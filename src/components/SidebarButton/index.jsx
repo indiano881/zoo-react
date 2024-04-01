@@ -1,10 +1,17 @@
 import styles from './SidebarButton.module.css'
 
-const SidebarButton = ({showAnimal, setShowAnimal}) => {
+const SidebarButton = ({ showAnimal, setShowAnimal, alreadyClicked, setAlreadyClicked }) => {
     const handleClick = () => {
-        setShowAnimal( null ? showAnimal : showAnimal)
-        console.log(showAnimal)
-        showAnimal=null
+        if (alreadyClicked === false) {
+            setShowAnimal(showAnimal);
+            setAlreadyClicked(true);
+        } else if (alreadyClicked === true && showAnimal === showAnimal) {
+            setShowAnimal(null);
+            setAlreadyClicked(false);
+        } else if (alreadyClicked === true) {
+            setShowAnimal(showAnimal);
+            setAlreadyClicked(false);
+        }
     }
 
     return (
