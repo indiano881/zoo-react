@@ -1,4 +1,4 @@
-function Animal (name, lifespan, group, food, description, length, weight, found, smallImg, largeImg) {
+function Animal (name, lifespan, group, food, description, length, weight, found, smallImg, largeImg, isActive) {
     this.name=name;
     this.lifespan=lifespan;
     this.group=group;
@@ -9,6 +9,7 @@ function Animal (name, lifespan, group, food, description, length, weight, found
     this.found=found;
     this.smallImg=smallImg;
     this.largeImg=largeImg;
+    this.isActive=isActive;
 }
 
 const echidna = new Animal ( 
@@ -21,7 +22,8 @@ const echidna = new Animal (
     "10kg",
     "Throughout Australia",
     "Echidna.png",
-    "echidna-large.jpg"
+    "echidna-large.jpg",
+    false
 )
 
 const frillNeckedLizard = new Animal (
@@ -34,7 +36,8 @@ const frillNeckedLizard = new Animal (
     "1 kg",
     "Northern Australia",
     "frilled-lizard-small.jpeg",
-    "frilled-lizard-big.jpeg"
+    "frilled-lizard-big.jpeg",
+    false
 
 )
 const cassowary = new Animal (
@@ -47,7 +50,8 @@ const cassowary = new Animal (
     "44kg",
     "Queensland",
     "cassowary-small.png",
-    "Cassowary.jpg"
+    "Cassowary.jpg",
+    false
 )
 
 const tasmanianDevil = new Animal (
@@ -60,7 +64,8 @@ const tasmanianDevil = new Animal (
     "10kg",
     "Tasmania",
     "tasmanian-devil.png",
-    "tasmanian-large.jpg"
+    "tasmanian-large.jpg",
+    false
 )
 
 const hawksbillTurtle = new Animal (
@@ -74,6 +79,7 @@ const hawksbillTurtle = new Animal (
     "Tropical coasts of Queensland, Northern Territory and Western Australia.",
     "hawksbill-turtle.png",
     "hawksbill-large.jpg",
+    false
 )
 
 const kookaburra = new Animal (
@@ -86,7 +92,8 @@ const kookaburra = new Animal (
     "300g",
     "Australia wide",
     "kookaburra-small.jpeg",
-    "kookaburra.png"
+    "kookaburra.png",
+    false
 )
 
 const quokka = new Animal (
@@ -99,7 +106,8 @@ const quokka = new Animal (
     "3kg",
     "Only found on Rottnest Island and a few places on mainland Western Australia",
     "quokka.png",
-    "quokka-large.jpg"
+    "quokka-large.jpg",
+    false
 )
 
 const perentie = new Animal (
@@ -112,7 +120,8 @@ const perentie = new Animal (
     "20kg",
     "Deserts",
     "perentie.png",
-    "perentie-large.jpg"
+    "perentie-large.jpg",
+    false
 )
 
 const ytbCockatoo= new Animal (
@@ -125,7 +134,8 @@ const ytbCockatoo= new Animal (
     "900 grams",
     "SE Australia",
     "yellow-tailed-cockatoo.png",
-    "Cockatoo-large.jpg"
+    "Cockatoo-large.jpg",
+    false
 )
 
 
