@@ -1,7 +1,7 @@
 .shortAnimalContainer {
     background-color: #549f93;
     color: black;
-    flex-grow: 1;
+    width: 70%;
     text-align: center;
 }
 

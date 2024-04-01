@@ -1,5 +1,8 @@
 .displayContent {
-    background-color: #362c28;
-    color: #eaeaea;
-    flex-grow: 1;
+    background-color: #549f93;
+    color: #34343a;
+    width: 70%;
+    padding: 24px;
+    text-align: center;
+
 }

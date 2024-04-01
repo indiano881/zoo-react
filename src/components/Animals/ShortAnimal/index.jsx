@@ -1,7 +1,7 @@
 import styles from './ShortAnimal.module.css'
 import {getImageURL} from "../../../utils/functions"
 
-const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAnimalModalOpen, setLongAnimalModalOpen, setCategory }) => { 
+const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAnimalModalOpen, setLongAnimalModalOpen, setCategory, setShowAnimal }) => { 
     const handleClick = () => {
         setLongAnimalModalOpen( isLongAnimalModalOpen=== true ? false: true)
     }
@@ -9,6 +9,7 @@ const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAni
     const handleClickCategory = () => {
         setCategory(group)
         console.log(group)
+        setShowAnimal(null)
         
     }
     return (

@@ -2,7 +2,7 @@ import styles from './Sidebar.module.css'
 import SidebarButton from "../SidebarButton"
 import { allAnimalArray, mammalsArray, reptileArray, birdsArray } from '../../data/data';
 
-const Sidebar = ({setShowAnimal, category}) => {
+const Sidebar = ({setShowAnimal, category, setCategory}) => {
       
     return (
           <div className={styles.sidebarContainer}>
