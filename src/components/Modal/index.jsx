@@ -11,29 +11,29 @@ const Modal = ({ isOpen, hasCloseBtn = true, onClose, children }) => {
       onClose();
     }
     setModalOpen(false);
-  };
+  }
 
   const handleKeyDown = (event) => {
     if (event.key === 'Escape') {
       handleCloseModal();
     }
-  };
+  }
 
   useEffect(() => {
     setModalOpen(isOpen);
-  }, [isOpen]);
+  }, [isOpen])
 
   useEffect(() => {
     const modalElement = modalRef.current;
 
     if (modalElement) {
       if (isModalOpen) {
-        modalElement.showModal();
+        modalElement.showModal()
       } else {
-        modalElement.close();
+        modalElement.close()
       }
     }
-  }, [isModalOpen]);
+  }, [isModalOpen])
 
   return (
     <dialog ref={modalRef} onKeyDown={handleKeyDown} className="modal">
@@ -43,7 +43,7 @@ const Modal = ({ isOpen, hasCloseBtn = true, onClose, children }) => {
       )}
       {children}
     </dialog>
-  );
-};
+  )
+}
 
 export default Modal;
