@@ -6,6 +6,7 @@ const MobileLayout = ({mobileMenu,setMobileMenu, setShowAnimal}) => {
   
   const handleClickIconMenu = () => {
     setMobileMenu(mobileMenu = mobileMenu==="false" ? "true" : "false")
+    console.log(mobileMenu)
   }
 
   const handleClick = () => {
@@ -14,19 +15,28 @@ const MobileLayout = ({mobileMenu,setMobileMenu, setShowAnimal}) => {
 
     return (
         <>
-        <img className={styles.mobileImg} onClick={handleClickIconMenu} src={getImageURL("align-justify.svg")} alt='menu icon' height="35px" width="35px"/>
+        <section class={styles.menu}>
+          <nav id={styles.navbar} class="navigation" role="navigation">
+            <input id={styles.toggle1} type="checkbox" />
+            <label className={styles.mobileImg} onClick={handleClickIconMenu} for={styles.toggle1}>
+              <div class={styles.top}></div>
+              <div class={styles.meat}></div>
+              <div class={styles.bottom}></div>
+            </label>
           
           {mobileMenu==="true" && <>
           
-           <NavLink className={styles.mobileMenu} to="/" onClick={handleClick}> Home </NavLink>
-           <NavLink className={styles.mobileMenu} to="mammals" onClick={handleClick}> Mammals </NavLink>
-           <NavLink className={styles.mobileMenu} to="birds" onClick={handleClick}> Birds </NavLink>
-           <NavLink className={styles.mobileMenu} to="reptiles" onClick={handleClick}> Reptiles </NavLink>
+          <nav class={styles.navigationContainer}>
+            <NavLink className={styles.mobileMenu} to="/" onClick={handleClick}> Home </NavLink>
+            <NavLink className={styles.mobileMenu} to="mammals" onClick={handleClick}> Mammals </NavLink>
+            <NavLink className={styles.mobileMenu} to="birds" onClick={handleClick}> Birds </NavLink>
+            <NavLink className={styles.mobileMenu} to="reptiles" onClick={handleClick}> Reptiles </NavLink>
+          </nav>
           </>
-          
           }
- 
-          <Outlet />
+          </nav>
+        </section>
+        <Outlet />
         </>
     )
 }
