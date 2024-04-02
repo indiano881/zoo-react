@@ -39,11 +39,9 @@ function App() {
 export default App
 /* 
 GROUP WITH LINK
-double click anuimal disappear
+fix mobile menu
 
 LIKE FUNCTION
 COOL ANIMATIONS
-use Effect?
 buy ticket page?
-
 */
