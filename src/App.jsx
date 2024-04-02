@@ -37,11 +37,10 @@ function App() {
 }
 
 export default App
-/* 
-
-fix mobile menu
-
+/* git 
 LIKE FUNCTION
 COOL ANIMATIONS
 buy ticket page?
+photos in maincontent
+
 */

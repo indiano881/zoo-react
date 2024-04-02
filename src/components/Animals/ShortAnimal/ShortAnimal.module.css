@@ -16,7 +16,7 @@
     cursor: pointer;
     font-weight: bold;
     padding: 0 8px 0 8px;
-    margin-bottom: 8px;
+    margin: 12px 25% 12px 25%;
 }
 
 .readMoreBtn:hover {
@@ -42,5 +42,17 @@
     .animalImg {
         margin-top: 24px;
         width: 60%;
+    }
+    .readMoreBtn {
+        
+        margin: 12px 35% 12px 35%;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+    
+    .readMoreBtn {
+        
+        margin: 12px 40% 12px 40%;
     }
 }
