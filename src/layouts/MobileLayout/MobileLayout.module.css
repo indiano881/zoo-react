@@ -13,6 +13,10 @@
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     z-index: 120;
+
+    position: absolute;
+    top: 10px;
+    right: 20px;;
 }
 
 .mobileImg div {
@@ -24,6 +28,7 @@
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
+
 
   #toggle1 {
     display: none;
@@ -79,15 +84,17 @@
   
 
   .mobileMenu {
+    color: #eaeaea;
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    font: 700 20px 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   .mobileMenu:hover {
-    background-color: #fff;
-    color: rgb(61, 61, 61);
+    background-color: #549f93;
+    color: #2c2c34;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
