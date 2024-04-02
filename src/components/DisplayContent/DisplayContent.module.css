@@ -6,3 +6,21 @@
     text-align: center;
 
 }
+
+.mainImg {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .mainImg {
+        width: 70%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .mainImg {
+        width: 85%;
+        height: auto;
+    }
+}
