@@ -38,7 +38,7 @@ function App() {
 
 export default App
 /* 
-GROUP WITH LINK
+
 fix mobile menu
 
 LIKE FUNCTION
