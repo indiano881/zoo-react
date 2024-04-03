@@ -28,9 +28,9 @@ const MobileLayout = ({mobileMenu,setMobileMenu, setShowAnimal}) => {
           
           <nav class={styles.navigationContainer}>
             <NavLink className={styles.mobileMenu} to="/" onClick={handleClick}> Home </NavLink>
-            <NavLink className={styles.mobileMenu} to="/mammals" onClick={handleClick}> Mammals </NavLink>
-            <NavLink className={styles.mobileMenu} to="/birds" onClick={handleClick}> Birds </NavLink>
-            <NavLink className={styles.mobileMenu} to="/reptiles" onClick={handleClick}> Reptiles </NavLink>
+            <NavLink className={styles.mobileMenu} to="mammals" onClick={handleClick}> Mammals </NavLink>
+            <NavLink className={styles.mobileMenu} to="birds" onClick={handleClick}> Birds </NavLink>
+            <NavLink className={styles.mobileMenu} to="reptiles" onClick={handleClick}> Reptiles </NavLink>
           </nav>
           </>
           }
