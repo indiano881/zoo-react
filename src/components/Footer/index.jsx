@@ -1,10 +1,12 @@
 import styles from './Footer.module.css'
 import { day } from '../../utils/functions';
+import BuyTicket from '../BuyTicket';
 
 const Footer = () => {
     return (
         <>
           <footer className={styles.footer}>
+            <BuyTicket />
             {day===0 && 
               <>
               <h4>Sunday open: 10.00/18.00</h4>
@@ -32,7 +34,7 @@ const Footer = () => {
             {day===4 && 
               <>
               <h4>Thursday open: 10.00/17.30</h4>
-              <h5>Activity: feed and play with the Tasmania Devil, at 11.00 and 15.00</h5>
+              <h5>Activity: play with the Tasmania Devil at 11.00</h5>
               </>
             }
             {day===5 && 
@@ -44,7 +46,7 @@ const Footer = () => {
             {day===6 && 
               <>
               <h4>Saturdays open: 10.00/19</h4>
-              <h5>Activity: brunch at 11.00 and tiramisu-party at 16.00</h5>
+              <h5>Activity: brunch at 11.00 with unlimited tiramisu´</h5>
               </>
             }
           </footer>
