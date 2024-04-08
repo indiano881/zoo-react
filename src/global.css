@@ -18,9 +18,9 @@ body {
 }
 
 #root {
-    font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
+    font-family: "Open Sans", sans-serif;
     min-height: 100%;
 }
 

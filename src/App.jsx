@@ -37,10 +37,3 @@ function App() {
 }
 
 export default App
-/* git 
-LIKE FUNCTION
-COOL ANIMATIONS
-buy ticket page?
-photos in maincontent
-
-*/

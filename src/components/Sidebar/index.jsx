@@ -1,5 +1,5 @@
-import styles from './Sidebar.module.css'
 import SidebarButton from "../SidebarButton"
+import styles from './Sidebar.module.css'
 import { allAnimalArray, mammalsArray, reptileArray, birdsArray } from '../../data/data';
 
 const Sidebar = ({setShowAnimal, category, setCategory, alreadyClicked, setAlreadyClicked}) => {
