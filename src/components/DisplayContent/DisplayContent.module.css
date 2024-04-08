@@ -1,26 +1,25 @@
 .displayContent {
     background-color: #549f93;
     color: #34343a;
-    width: 70%;
     padding: 24px;
     text-align: center;
-
+    width: 70%;
 }
 
 .mainImg {
-    width: 200px;
     height: auto;
+    width: 200px;
 }
 
 @media screen and (min-width: 500px) {
     .mainImg {
-        width: 70%;
         height: auto;
+        width: 70%;
     }
 }
 @media screen and (min-width: 1000px) {
     .mainImg {
-        width: 85%;
         height: auto;
+        width: 85%;
     }
 }

@@ -5,10 +5,9 @@ const Header = ({pageTitle}) => {
         <>
           <header className={styles.header}>
                 <h1 className={styles.pageTitle}>{pageTitle}</h1>
-
           </header>
         </>
     )
-};
+}
 
 export default Header

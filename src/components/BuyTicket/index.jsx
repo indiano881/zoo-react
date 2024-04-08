@@ -6,6 +6,6 @@ const BuyTicket = () => {
           <a className={styles.buyTicket} href="https://buy.stripe.com/test_aEUaER7zCfrz18IdQQ">BUY TICKET</a>
         </>
     )
-};
+}
 
 export default BuyTicket

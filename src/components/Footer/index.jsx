@@ -1,7 +1,7 @@
-import styles from './Footer.module.css'
-import { day } from '../../utils/functions';
 import BuyTicket from '../BuyTicket';
 import FooterMessages from './FooterMessages';
+import styles from './Footer.module.css';
+import { day } from '../../utils/functions';
 
 const Footer = () => {
     return (

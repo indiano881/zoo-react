@@ -11,7 +11,6 @@ const ShortAnimal = ({name, group, food, description, found, smallImg, isLongAni
         setCategory(group)
         console.log(group)
         setShowAnimal(null)
-        
     }
     
     return (

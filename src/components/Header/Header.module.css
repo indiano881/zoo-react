@@ -2,13 +2,13 @@
     background-color: #2c2c34;
     height: 100px;
     text-align: center;
-    
-    
 }
-.pageTitle{
-    position: relative;
+
+.pageTitle {
     color: #eaeaea;
+    position: relative;
 }
+
 .pageTitle::before {
     background-color: #eaeaea;
     background-image: url('../../assets/images/logo-green.png');
